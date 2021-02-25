@@ -13,6 +13,7 @@
 		5AD1554425E8042E00172CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554325E8042E00172CEA /* Assets.xcassets */; };
 		5AD1554725E8042E00172CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554625E8042E00172CEA /* Preview Assets.xcassets */; };
 		5AD1554A25E8042E00172CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554825E8042E00172CEA /* LaunchScreen.storyboard */; };
+		5AD1555425E8045700172CEA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1555325E8045700172CEA /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5AD1554625E8042E00172CEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AD1554925E8042E00172CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AD1554B25E8042E00172CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD1555325E8045700172CEA /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		5AD1553C25E8042D00172CEA /* settingsclone */ = {
 			isa = PBXGroup;
 			children = (
+				5AD1555225E8044F00172CEA /* Data */,
 				5AD1553D25E8042D00172CEA /* AppDelegate.swift */,
 				5AD1553F25E8042D00172CEA /* SceneDelegate.swift */,
 				5AD1554125E8042D00172CEA /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				5AD1554625E8042E00172CEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AD1555225E8044F00172CEA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5AD1555325E8045700172CEA /* Items.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD1555425E8045700172CEA /* Items.swift in Sources */,
 				5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */,
 				5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */,
 				5AD1554225E8042D00172CEA /* ContentView.swift in Sources */,
