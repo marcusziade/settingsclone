@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183225E823AA00445CE6 /* ItemBadgeView.swift */; };
 		5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1553D25E8042D00172CEA /* AppDelegate.swift */; };
 		5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1553F25E8042D00172CEA /* SceneDelegate.swift */; };
 		5AD1554225E8042D00172CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1554125E8042D00172CEA /* ContentView.swift */; };
@@ -14,9 +15,12 @@
 		5AD1554725E8042E00172CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554625E8042E00172CEA /* Preview Assets.xcassets */; };
 		5AD1554A25E8042E00172CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554825E8042E00172CEA /* LaunchScreen.storyboard */; };
 		5AD1555425E8045700172CEA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1555325E8045700172CEA /* Items.swift */; };
+		5AF5742625E822AB00DD3BDE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5742525E822AB00DD3BDE /* ItemCell.swift */; };
+		5AF5742A25E822EE00DD3BDE /* Tools in Frameworks */ = {isa = PBXBuildFile; productRef = 5AF5742925E822EE00DD3BDE /* Tools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A22183225E823AA00445CE6 /* ItemBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeView.swift; sourceTree = "<group>"; };
 		5AD1553A25E8042D00172CEA /* settingsclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = settingsclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD1553D25E8042D00172CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AD1553F25E8042D00172CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		5AD1554925E8042E00172CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AD1554B25E8042E00172CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD1555325E8045700172CEA /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		5AF5742525E822AB00DD3BDE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF5742A25E822EE00DD3BDE /* Tools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD1555225E8044F00172CEA /* Data */,
+				5AF5742325E8229C00DD3BDE /* Views */,
 				5AD1553D25E8042D00172CEA /* AppDelegate.swift */,
 				5AD1553F25E8042D00172CEA /* SceneDelegate.swift */,
 				5AD1554125E8042D00172CEA /* ContentView.swift */,
@@ -86,6 +93,23 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5AF5742325E8229C00DD3BDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AF5742425E8229F00DD3BDE /* Cells */,
+				5A22183225E823AA00445CE6 /* ItemBadgeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AF5742425E8229F00DD3BDE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5AF5742525E822AB00DD3BDE /* ItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +126,9 @@
 			dependencies = (
 			);
 			name = settingsclone;
+			packageProductDependencies = (
+				5AF5742925E822EE00DD3BDE /* Tools */,
+			);
 			productName = settingsclone;
 			productReference = 5AD1553A25E8042D00172CEA /* settingsclone.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 5AD1553125E8042D00172CEA;
+			packageReferences = (
+				5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */,
+			);
 			productRefGroup = 5AD1553B25E8042D00172CEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,9 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD1555425E8045700172CEA /* Items.swift in Sources */,
+				5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */,
 				5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */,
 				5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */,
 				5AD1554225E8042D00172CEA /* ContentView.swift in Sources */,
+				5AF5742625E822AB00DD3BDE /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcusziade/Tools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AF5742925E822EE00DD3BDE /* Tools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */;
+			productName = Tools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AD1553225E8042D00172CEA /* Project object */;
 }
