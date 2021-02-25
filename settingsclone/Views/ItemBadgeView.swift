@@ -20,8 +20,8 @@ class ItemBadgeView: UIView {
 
     let itemImageView: UIImageView = {
         let view = UIImageView().forAutoLayout()
-        view.heightAnchor.constraint(equalToConstant: 55).isActive = true
-        view.widthAnchor.constraint(equalToConstant: 55).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        view.widthAnchor.constraint(equalToConstant: 25).isActive = true
         view.contentMode = .scaleAspectFit
         view.tintColor = .white
         view.image = UIImage(systemName: "speaker.wave.3")
@@ -41,10 +41,10 @@ class ItemBadgeView: UIView {
             backgroundView.trailingAnchor.constraint(equalTo: trailingAnchor),
             backgroundView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
-            itemImageView.topAnchor.constraint(equalTo: backgroundView.topAnchor),
-            itemImageView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor),
-            itemImageView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor),
-            itemImageView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor),
+            itemImageView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 4),
+            itemImageView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 4),
+            itemImageView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -4),
+            itemImageView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -4),
 
         ])
     }

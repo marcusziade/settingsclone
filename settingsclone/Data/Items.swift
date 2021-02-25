@@ -12,105 +12,105 @@ struct Items {
     private let data: [Item] = [
         Item(
             image: "airplane",
-            color: .orange,
+            color: .systemOrange,
             title: "Airplane Mode",
             section: .connectivity
         ),
 
         Item(
             image: "wifi",
-            color: .blue,
+            color: .systemBlue,
             title: "Wi-Fi",
             section: .connectivity
         ),
 
         Item(
             image: "wave.3.right",
-            color: .blue,
+            color: .systemBlue,
             title: "Bluetooth",
             section: .connectivity
         ),
 
         Item(
             image: "antenna.radiowaves.left.and.right",
-            color: .green,
+            color: .systemGreen,
             title: "Cellular",
             section: .connectivity
         ),
 
         Item(
             image: "personalhotspot",
-            color: .green,
+            color: .systemGreen,
             title: "Personal Hotspot",
             section: .connectivity
         ),
 
         Item(
             image: "network",
-            color: .blue,
+            color: .systemBlue,
             title: "VPN",
             section: .connectivity
         ),
 
         Item(
             image: "bolt.horizontal",
-            color: .red,
+            color: .systemRed,
             title: "Notifications",
             section: .alert
         ),
 
         Item(
             image: "speaker.wave.3",
-            color: .red,
+            color: .systemRed,
             title: "Sounds & Haptics",
             section: .alert
         ),
 
         Item(
             image: "moon.fill",
-            color: .purple,
+            color: .systemPurple,
             title: "Do Not Disturb",
             section: .alert
         ),
 
         Item(
             image: "hourglass",
-            color: .purple,
+            color: .systemPurple,
             title: "Screen Time",
             section: .alert
         ),
 
         Item(
             image: "gear",
-            color: .gray,
+            color: .systemGray,
             title: "General",
             section: .preference
         ),
 
         Item(
             image: "switch.2",
-            color: .gray,
+            color: .systemGray,
             title: "Control Center",
             section: .preference
         ),
 
         Item(
             image: "textformat.size",
-            color: .blue,
+            color: .systemBlue,
             title: "Display & Brightness",
             section: .preference
         ),
 
         Item(
             image: "square.grid.3x1.fill.below.line.grid.1x2",
-            color: .purple,
+            color: .systemPurple,
             title: "Home Screen",
             section: .preference
         ),
 
         Item(
             image: "figure.wave.circle",
-            color: .blue,
+            color: .systemBlue,
             title: "Accessibility",
             section: .preference
         ),
@@ -124,119 +124,119 @@ struct Items {
 
         Item(
             image: "faceid",
-            color: .green,
+            color: .systemGreen,
             title: "Face ID & Passcode",
             section: .preference
         ),
 
         Item(
             image: "staroflife.fill",
-            color: .red,
+            color: .systemRed,
             title: "Emergency SOS",
             section: .preference
         ),
 
         Item(
             image: "heart.fill",
-            color: .red,
-            title: "",
+            color: .systemRed,
+            title: "Exposure Notifications",
             section: .preference
         ),
 
         Item(
             image: "battery.100",
-            color: .red,
+            color: .systemGreen,
             title: "Battery",
             section: .preference
         ),
 
         Item(
             image: "hand.raised.fill",
-            color: .blue,
+            color: .systemBlue,
             title: "Privacy",
             section: .preference
         ),
 
         Item(
             image: "giftcard",
-            color: .blue,
+            color: .systemBlue,
             title: "App Store",
             section: .appStore
         ),
 
         Item(
             image: "wallet.pass.fill",
-            color: .green,
+            color: .systemGreen,
             title: "Wallet & Apple Pay",
             section: .appStore
         ),
 
         Item(
             image: "key.fill",
-            color: .gray,
+            color: .systemGray,
             title: "Passwords",
             section: .preInstalled
         ),
 
         Item(
             image: "envelope.fill",
-            color: .blue,
+            color: .systemBlue,
             title: "Mail",
             section: .preInstalled
         ),
 
         Item(
             image: "rectangle.stack.person.crop.fill",
-            color: .gray,
+            color: .systemGray,
             title: "Contacts",
             section: .preInstalled
         ),
 
         Item(
             image: "calendar",
-            color: .red,
+            color: .systemRed,
             title: "Calendar",
             section: .preInstalled
         ),
 
         Item(
             image: "note.text",
-            color: .yellow,
+            color: .systemYellow,
             title: "Notes",
             section: .preInstalled
         ),
 
         Item(
             image: "list.dash",
-            color: .orange,
+            color: .systemOrange,
             title: "Reminders",
             section: .preInstalled
         ),
 
         Item(
             image: "phone.fill",
-            color: .green,
+            color: .systemGreen,
             title: "Phone",
             section: .preInstalled
         ),
 
         Item(
             image: "bubble.left.fill",
-            color: .green,
+            color: .systemGreen,
             title: "Messages",
             section: .preInstalled
         ),
 
         Item(
             image: "video.fill",
-            color: .green,
+            color: .systemGreen,
             title: "FaceTime",
             section: .preInstalled
         ),
 
         Item(
             image: "safari.fill",
-            color: .blue,
+            color: .systemBlue,
             title: "Safari",
             section: .preInstalled
         ),
@@ -257,14 +257,14 @@ struct Items {
 
         Item(
             image: "map.fill",
-            color: .green,
+            color: .systemGreen,
             title: "Maps",
             section: .preInstalled
         ),
 
         Item(
             image: "heart.circle.fill",
-            color: .red,
+            color: .systemRed,
             title: "Health",
             section: .preInstalled
         ),
@@ -285,26 +285,26 @@ struct Items {
 
 }
 
+enum Section: CaseIterable {
+    case connectivity
+    case alert
+    case preference
+    case appStore
+    case preInstalled
+}
+
 struct Item: Identifiable {
 
     // MARK: - Types
-    enum Section: String, CaseIterable {
-        case connectivity
-        case alert
-        case preference
-        case appStore
-        case preInstalled
-    }
-
     enum Color: String, CaseIterable {
-        case orange
-        case blue
-        case green
-        case red
-        case purple
-        case gray
+        case systemOrange
+        case systemBlue
+        case systemGreen
+        case systemRed
+        case systemPurple
+        case systemGray
         case cyan
-        case yellow
+        case systemYellow
         case black
     }
 

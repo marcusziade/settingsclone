@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183225E823AA00445CE6 /* ItemBadgeView.swift */; };
+		5A22183925E8295B00445CE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183825E8295B00445CE6 /* SettingsViewController.swift */; };
+		5A22184025E832B100445CE6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183F25E832B100445CE6 /* UIColorExtensions.swift */; };
 		5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1553D25E8042D00172CEA /* AppDelegate.swift */; };
 		5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1553F25E8042D00172CEA /* SceneDelegate.swift */; };
 		5AD1554225E8042D00172CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1554125E8042D00172CEA /* ContentView.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		5A22183225E823AA00445CE6 /* ItemBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeView.swift; sourceTree = "<group>"; };
+		5A22183825E8295B00445CE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5A22183F25E832B100445CE6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5AD1553A25E8042D00172CEA /* settingsclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = settingsclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD1553D25E8042D00172CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AD1553F25E8042D00172CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A22183725E8294F00445CE6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A22183825E8295B00445CE6 /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5A22183E25E832A100445CE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A22183F25E832B100445CE6 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5AD1553125E8042D00172CEA = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +84,13 @@
 		5AD1553C25E8042D00172CEA /* settingsclone */ = {
 			isa = PBXGroup;
 			children = (
-				5AD1555225E8044F00172CEA /* Data */,
-				5AF5742325E8229C00DD3BDE /* Views */,
 				5AD1553D25E8042D00172CEA /* AppDelegate.swift */,
 				5AD1553F25E8042D00172CEA /* SceneDelegate.swift */,
+				5AD1555225E8044F00172CEA /* Data */,
+				5AF5742325E8229C00DD3BDE /* Views */,
+				5A22183725E8294F00445CE6 /* View Controllers */,
 				5AD1554125E8042D00172CEA /* ContentView.swift */,
+				5A22183E25E832A100445CE6 /* Extensions */,
 				5AD1554325E8042E00172CEA /* Assets.xcassets */,
 				5AD1554825E8042E00172CEA /* LaunchScreen.storyboard */,
 				5AD1554B25E8042E00172CEA /* Info.plist */,
@@ -188,10 +210,12 @@
 			files = (
 				5AD1555425E8045700172CEA /* Items.swift in Sources */,
 				5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */,
+				5A22183925E8295B00445CE6 /* SettingsViewController.swift in Sources */,
 				5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */,
 				5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */,
 				5AD1554225E8042D00172CEA /* ContentView.swift in Sources */,
 				5AF5742625E822AB00DD3BDE /* ItemCell.swift in Sources */,
+				5A22184025E832B100445CE6 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

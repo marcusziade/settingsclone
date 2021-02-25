@@ -19,7 +19,6 @@ class ItemCell: UITableViewCell, Reusable {
     private let titleLabel: UILabel = {
         let label = UILabel().forAutoLayout()
         label.text = "Item title"
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
         return label
     }()
 
@@ -48,7 +47,7 @@ class ItemCell: UITableViewCell, Reusable {
     // MARK: - Methods
     func configure(with item: Item) {
         itemBadgeView.itemImageView.image = UIImage(systemName: item.image)
-        itemBadgeView.backgroundView.backgroundColor = UIColor.init(named: item.color.rawValue)
+        itemBadgeView.backgroundView.backgroundColor = UIColor.colorWith(name: item.color.rawValue)
         titleLabel.text = item.title
     }
 }
@@ -58,4 +57,3 @@ import SwiftUI
 struct ItemCell_Preview: PreviewProvider {
     static var previews: some View = createPreview(for: ItemCell(), mode: .dark, width: 400, height: 80)
 }
-
