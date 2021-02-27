@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        Section.allCases.count
+        ListSection.allCases.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

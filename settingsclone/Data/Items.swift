@@ -285,7 +285,7 @@ struct Items {
 
 }
 
-enum Section: CaseIterable {
+enum ListSection: CaseIterable {
     case connectivity
     case alert
     case preference
@@ -293,7 +293,7 @@ enum Section: CaseIterable {
     case preInstalled
 }
 
-struct Item: Identifiable {
+struct Item: Identifiable, Hashable {
 
     // MARK: - Types
     enum Color: String, CaseIterable {
@@ -313,6 +313,6 @@ struct Item: Identifiable {
     let image: String
     let color: Color
     let title: String
-    let section: Section
+    let section: ListSection
 
 }
