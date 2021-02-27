@@ -27,6 +27,12 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         title = "Settings"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: "Go To SwiftUI",
+            image: nil,
+            primaryAction: UIAction(handler: { [self] _ in showSwiftUI() }),
+            menu: nil
+        )
 
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
@@ -35,6 +41,17 @@ class SettingsViewController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
+    }
+
+    // MARK: - Methods
+    private func showSwiftUI() {
+        var view = ContentView()
+        view.onClose = { [weak self] in
+            self?.dismiss(animated: true)
+        }
+        let viewController = UIHostingController(rootView: view)
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: true)
     }
 }
 

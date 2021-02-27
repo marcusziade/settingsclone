@@ -11,6 +11,7 @@ struct ContentView: View {
 
     // MARK: - Properties
     var items = Items()
+    var onClose: (() -> Void)?
 
     var body: some View {
         NavigationView {
@@ -61,6 +62,7 @@ struct ContentView: View {
                 }
             }.listStyle(GroupedListStyle())
             .navigationBarTitle(Text("Settings"))
+            .navigationBarItems(leading: Button("Go To UIkit") { onClose?() })
         }
     }
 }
