@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         let view = UITableView(frame: .zero, style: .grouped).forAutoLayout()
         view.register(cellType: ItemCell.self)
         view.dataSource = self
+        view.delegate = self
         return view
     }()
 
@@ -26,6 +27,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         title = "Settings"
         navigationController?.navigationBar.prefersLargeTitles = true
+
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -73,6 +75,30 @@ extension SettingsViewController: UITableViewDataSource {
                 cell.configure(with: items.preInstalled[indexPath.row])
         }
         return cell
+    }
+
+}
+
+// MARK: - Tableview Delegate methods
+extension SettingsViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        var title: String
+        switch indexPath.section {
+            case 0:
+                title = items.connectivity[indexPath.row].title
+            case 1:
+                title = items.alert[indexPath.row].title
+            case 2:
+                title = items.preference[indexPath.row].title
+            case 3:
+                title = items.appStore[indexPath.row].title
+            default:
+                title = items.preInstalled[indexPath.row].title
+        }
+        let viewController = DetailViewViewController(title: title)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
 }
