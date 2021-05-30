@@ -10,12 +10,14 @@ import UIKit
 class DetailViewViewController: UIViewController {
 
     // MARK: - UI Components
+
     let titleLabel: UILabel = {
         let label = UILabel().forAutoLayout()
         return label
     }()
 
     // MARK: - Init
+
     init(title: String) {
         titleLabel.text = title
         super.init(nibName: nil, bundle: nil)
@@ -26,6 +28,7 @@ class DetailViewViewController: UIViewController {
     }
 
     // MARK: - Lifecycle methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

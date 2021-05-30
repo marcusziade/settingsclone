@@ -282,7 +282,6 @@ struct Items {
         appStore = data.filter { $0.section == .appStore }
         preInstalled = data.filter { $0.section == .preInstalled }
     }
-
 }
 
 enum ListSection: CaseIterable {
@@ -296,6 +295,7 @@ enum ListSection: CaseIterable {
 struct Item: Identifiable, Hashable {
 
     // MARK: - Types
+
     enum Color: String, CaseIterable {
         case systemOrange
         case systemBlue
@@ -309,10 +309,10 @@ struct Item: Identifiable, Hashable {
     }
 
     // MARK: - Properties
+    
     var id = UUID()
     let image: String
     let color: Color
     let title: String
     let section: ListSection
-
 }

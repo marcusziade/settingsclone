@@ -11,9 +11,11 @@ import Tools
 class SettingsViewController: UIViewController {
 
     // MARK: - Properties
+
     let items = Items()
 
     // MARK: - UI Components
+
     lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .grouped).forAutoLayout()
         view.register(cellType: ItemCell.self)
@@ -23,6 +25,7 @@ class SettingsViewController: UIViewController {
     }()
 
     // MARK: - Lifecycle methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Settings"
@@ -44,6 +47,7 @@ class SettingsViewController: UIViewController {
     }
 
     // MARK: - Methods
+
     private func showSwiftUI() {
         var view = ContentView()
         view.onClose = { [weak self] in
@@ -56,6 +60,7 @@ class SettingsViewController: UIViewController {
 }
 
 // MARK: - Tableview Datasource methods
+
 extension SettingsViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -93,10 +98,10 @@ extension SettingsViewController: UITableViewDataSource {
         }
         return cell
     }
-
 }
 
 // MARK: - Tableview Delegate methods
+
 extension SettingsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -117,7 +122,6 @@ extension SettingsViewController: UITableViewDelegate {
         let viewController = DetailViewViewController(title: title)
         navigationController?.pushViewController(viewController, animated: true)
     }
-
 }
 
 import SwiftUI

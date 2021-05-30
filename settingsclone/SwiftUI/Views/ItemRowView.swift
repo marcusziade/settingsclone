@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemRowView: View {
 
     // MARK: - Properties
+    
     let item: Item
 
     var body: some View {

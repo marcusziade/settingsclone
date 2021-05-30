@@ -11,6 +11,7 @@ import Tools
 class ItemCell: UITableViewCell, Reusable {
 
     // MARK: - UI Components
+
     private let itemBadgeView: ItemBadgeView = {
         let view = ItemBadgeView().forAutoLayout()
         return view
@@ -18,11 +19,12 @@ class ItemCell: UITableViewCell, Reusable {
 
     private let titleLabel: UILabel = {
         let label = UILabel().forAutoLayout()
-        label.text = "Item title"
+        label.text = NSLocalizedString("Item title", comment: "")
         return label
     }()
 
     // MARK: - Init
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         accessoryType = .disclosureIndicator
@@ -45,6 +47,7 @@ class ItemCell: UITableViewCell, Reusable {
     }
 
     // MARK: - Methods
+
     func configure(with item: Item) {
         itemBadgeView.itemImageView.image = UIImage(systemName: item.image)
         itemBadgeView.backgroundView.backgroundColor = UIColor.colorWith(name: item.color.rawValue)

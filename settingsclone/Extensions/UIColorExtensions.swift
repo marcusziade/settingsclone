@@ -18,5 +18,4 @@ extension UIColor {
             return nil
         }
     }
-
 }

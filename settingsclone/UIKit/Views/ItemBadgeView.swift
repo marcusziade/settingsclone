@@ -11,6 +11,7 @@ import Tools
 class ItemBadgeView: UIView {
 
     // MARK: - UI Components
+
     let backgroundView: UIView = {
         let view = UIView().forAutoLayout()
         view.layer.cornerRadius = 8
@@ -29,6 +30,7 @@ class ItemBadgeView: UIView {
     }()
 
     // MARK: - Init
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -45,7 +47,6 @@ class ItemBadgeView: UIView {
             itemImageView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 4),
             itemImageView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -4),
             itemImageView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -4),
-
         ])
     }
 

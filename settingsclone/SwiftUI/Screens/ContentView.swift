@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     // MARK: - Properties
+    
     var items = Items()
     var onClose: (() -> Void)?
 
