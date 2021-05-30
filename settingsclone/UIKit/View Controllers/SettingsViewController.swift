@@ -12,11 +12,11 @@ class SettingsViewController: UIViewController {
 
     // MARK: - Properties
 
-    let items = Items()
+    private let items = Items()
 
     // MARK: - UI Components
 
-    lazy var tableView: UITableView = {
+    private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .grouped).forAutoLayout()
         view.register(cellType: ItemCell.self)
         view.dataSource = self

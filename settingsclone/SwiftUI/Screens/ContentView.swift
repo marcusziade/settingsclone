@@ -11,7 +11,7 @@ struct ContentView: View {
 
     // MARK: - Properties
     
-    var items = Items()
+    private var items = Items()
     var onClose: (() -> Void)?
 
     var body: some View {

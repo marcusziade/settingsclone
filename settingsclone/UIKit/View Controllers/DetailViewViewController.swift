@@ -11,7 +11,7 @@ class DetailViewViewController: UIViewController {
 
     // MARK: - UI Components
 
-    let titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel().forAutoLayout()
         return label
     }()
