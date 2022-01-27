@@ -58,5 +58,7 @@ class ItemCell: UITableViewCell, Reusable {
 import SwiftUI
 
 struct ItemCell_Preview: PreviewProvider {
-    static var previews: some View = createPreview(for: ItemCell(), mode: .dark, width: 400, height: 80)
+    static var previews: some View = Preview(for: ItemCell())
+        .previewLayout(.fixed(width: 300, height: 100))
+        .preferredColorScheme(.dark)
 }

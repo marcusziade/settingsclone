@@ -127,6 +127,10 @@ extension SettingsViewController: UITableViewDelegate {
 import SwiftUI
 
 struct SettingsViewController_Preview: PreviewProvider {
-    static var previews: some View = createiPhonePreview(for: UINavigationController(rootViewController: SettingsViewController()), mode: .dark)
+    static var previews: some View = Preview(
+        for: SettingsViewController(),
+        navigationControllerStyle: .wrap(prefersLargeTitles: true)
+    )
+    .preferredColorScheme(.dark)
 }
 

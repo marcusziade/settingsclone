@@ -58,6 +58,7 @@ class ItemBadgeView: UIView {
 import SwiftUI
 
 struct ItemImageView_Preview: PreviewProvider {
-    static var previews: some View = createPreview(for: ItemBadgeView(), mode: .dark, width: 100, height: 100)
+    static var previews: some View = Preview(for: ItemBadgeView())
+        .previewLayout(.fixed(width: 25, height: 25))
 }
 

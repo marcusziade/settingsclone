@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Tools
 
 class DetailViewViewController: UIViewController {
 
@@ -44,6 +45,7 @@ class DetailViewViewController: UIViewController {
 import SwiftUI
 
 struct DetailViewViewController_Preview: PreviewProvider {
-    static var previews: some View = createiPhonePreview(for: DetailViewViewController(title: "General"), mode: .dark)
+    static var previews: some View = Preview(for: DetailViewViewController(title: "General"))
+        .preferredColorScheme(.dark)
 }
 
