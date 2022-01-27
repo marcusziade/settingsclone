@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Tools
 
 class ItemCell: UITableViewCell, Reusable {
 

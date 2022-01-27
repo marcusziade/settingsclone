@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183225E823AA00445CE6 /* ItemBadgeView.swift */; };
 		5A22183925E8295B00445CE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183825E8295B00445CE6 /* SettingsViewController.swift */; };
 		5A22184025E832B100445CE6 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22183F25E832B100445CE6 /* UIColorExtensions.swift */; };
+		5A22CA5827A23C7700CCDC62 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5227A23C7700CCDC62 /* Reusable.swift */; };
+		5A22CA5927A23C7700CCDC62 /* NSLayoutConstraintExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5327A23C7700CCDC62 /* NSLayoutConstraintExtensions.swift */; };
+		5A22CA5A27A23C7700CCDC62 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5427A23C7700CCDC62 /* UIViewExtensions.swift */; };
+		5A22CA5B27A23C7700CCDC62 /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5527A23C7700CCDC62 /* HapticEngine.swift */; };
+		5A22CA5C27A23C7700CCDC62 /* LivePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5627A23C7700CCDC62 /* LivePreview.swift */; };
+		5A22CA5D27A23C7700CCDC62 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22CA5727A23C7700CCDC62 /* UIViewControllerExtensions.swift */; };
 		5A57EC8625EA0134003DE090 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57EC8525EA0134003DE090 /* ItemRowView.swift */; };
 		5A57EC8925EA0A91003DE090 /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57EC8825EA0A91003DE090 /* DetailViewViewController.swift */; };
 		5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1553D25E8042D00172CEA /* AppDelegate.swift */; };
@@ -20,13 +26,18 @@
 		5AD1554A25E8042E00172CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD1554825E8042E00172CEA /* LaunchScreen.storyboard */; };
 		5AD1555425E8045700172CEA /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1555325E8045700172CEA /* Items.swift */; };
 		5AF5742625E822AB00DD3BDE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5742525E822AB00DD3BDE /* ItemCell.swift */; };
-		5AF5742A25E822EE00DD3BDE /* Tools in Frameworks */ = {isa = PBXBuildFile; productRef = 5AF5742925E822EE00DD3BDE /* Tools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A22183225E823AA00445CE6 /* ItemBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeView.swift; sourceTree = "<group>"; };
 		5A22183825E8295B00445CE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5A22183F25E832B100445CE6 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		5A22CA5227A23C7700CCDC62 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		5A22CA5327A23C7700CCDC62 /* NSLayoutConstraintExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtensions.swift; sourceTree = "<group>"; };
+		5A22CA5427A23C7700CCDC62 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		5A22CA5527A23C7700CCDC62 /* HapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
+		5A22CA5627A23C7700CCDC62 /* LivePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePreview.swift; sourceTree = "<group>"; };
+		5A22CA5727A23C7700CCDC62 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		5A57EC8525EA0134003DE090 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		5A57EC8825EA0A91003DE090 /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
 		5AD1553A25E8042D00172CEA /* settingsclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = settingsclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF5742A25E822EE00DD3BDE /* Tools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +75,22 @@
 		5A22183E25E832A100445CE6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A22CA5427A23C7700CCDC62 /* UIViewExtensions.swift */,
 				5A22183F25E832B100445CE6 /* UIColorExtensions.swift */,
+				5A22CA5327A23C7700CCDC62 /* NSLayoutConstraintExtensions.swift */,
+				5A22CA5727A23C7700CCDC62 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A22CA5127A23C6600CCDC62 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A22CA5527A23C7700CCDC62 /* HapticEngine.swift */,
+				5A22CA5627A23C7700CCDC62 /* LivePreview.swift */,
+				5A22CA5227A23C7700CCDC62 /* Reusable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		5AC40D0925E9FFBF00313B81 /* UIKit */ = {
@@ -129,6 +152,7 @@
 				5AC40D0925E9FFBF00313B81 /* UIKit */,
 				5AC40D0A25E9FFCB00313B81 /* SwiftUI */,
 				5A22183E25E832A100445CE6 /* Extensions */,
+				5A22CA5127A23C6600CCDC62 /* Utilities */,
 				5AD1554325E8042E00172CEA /* Assets.xcassets */,
 				5AD1554825E8042E00172CEA /* LaunchScreen.storyboard */,
 				5AD1554B25E8042E00172CEA /* Info.plist */,
@@ -187,7 +211,6 @@
 			);
 			name = settingsclone;
 			packageProductDependencies = (
-				5AF5742925E822EE00DD3BDE /* Tools */,
 			);
 			productName = settingsclone;
 			productReference = 5AD1553A25E8042D00172CEA /* settingsclone.app */;
@@ -217,7 +240,6 @@
 			);
 			mainGroup = 5AD1553125E8042D00172CEA;
 			packageReferences = (
-				5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */,
 			);
 			productRefGroup = 5AD1553B25E8042D00172CEA /* Products */;
 			projectDirPath = "";
@@ -246,14 +268,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A22CA5D27A23C7700CCDC62 /* UIViewControllerExtensions.swift in Sources */,
 				5AD1555425E8045700172CEA /* Items.swift in Sources */,
+				5A22CA5827A23C7700CCDC62 /* Reusable.swift in Sources */,
+				5A22CA5B27A23C7700CCDC62 /* HapticEngine.swift in Sources */,
 				5A22183325E823AA00445CE6 /* ItemBadgeView.swift in Sources */,
+				5A22CA5A27A23C7700CCDC62 /* UIViewExtensions.swift in Sources */,
 				5A57EC8625EA0134003DE090 /* ItemRowView.swift in Sources */,
 				5A22183925E8295B00445CE6 /* SettingsViewController.swift in Sources */,
 				5AD1553E25E8042D00172CEA /* AppDelegate.swift in Sources */,
+				5A22CA5C27A23C7700CCDC62 /* LivePreview.swift in Sources */,
 				5AD1554025E8042D00172CEA /* SceneDelegate.swift in Sources */,
 				5AD1554225E8042D00172CEA /* ContentView.swift in Sources */,
 				5AF5742625E822AB00DD3BDE /* ItemCell.swift in Sources */,
+				5A22CA5927A23C7700CCDC62 /* NSLayoutConstraintExtensions.swift in Sources */,
 				5A57EC8925EA0A91003DE090 /* DetailViewViewController.swift in Sources */,
 				5A22184025E832B100445CE6 /* UIColorExtensions.swift in Sources */,
 			);
@@ -453,25 +481,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/marcusziade/Tools.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5AF5742925E822EE00DD3BDE /* Tools */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5AF5742825E822EE00DD3BDE /* XCRemoteSwiftPackageReference "Tools" */;
-			productName = Tools;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AD1553225E8042D00172CEA /* Project object */;
 }

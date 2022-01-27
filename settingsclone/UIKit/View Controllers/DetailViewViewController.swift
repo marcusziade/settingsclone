@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Tools
 
 class DetailViewViewController: UIViewController {
 
