@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension NSLayoutConstraint {
+extension NSLayoutConstraint {
 
     func named(_ name: String) -> NSLayoutConstraint {
         self.identifier = name

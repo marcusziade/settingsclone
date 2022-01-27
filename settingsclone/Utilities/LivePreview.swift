@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-/// Enables Xcode livePreview in UIKit
-@available(iOS 13.0, *)
-public struct Preview: View {
+struct Preview: View {
 
-    public enum NavigationController {
+    enum NavigationController {
         case none
         case wrap(prefersLargeTitles: Bool = false)
     }
 
-    public let body: AnyView
+    let body: AnyView
 
-    public init(for viewController: UIViewController, navigationControllerStyle: NavigationController = .none) {
+    init(for viewController: UIViewController, navigationControllerStyle: NavigationController = .none) {
         let preview = PreviewController(for: viewController)
 
         switch navigationControllerStyle {
@@ -29,12 +27,11 @@ public struct Preview: View {
         }
     }
 
-    public init(for view: UIView) {
+    init(for view: UIView) {
         body = AnyView(erasing: PreviewView(for: view))
     }
 }
 
-@available(iOS 11.0, *)
 private struct PreviewController<ViewControllerType: UIViewController>: UIViewControllerRepresentable {
 
     let viewController: ViewControllerType

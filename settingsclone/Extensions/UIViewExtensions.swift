@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
 
     func forAutoLayout() -> Self {
         translatesAutoresizingMaskIntoConstraints = false

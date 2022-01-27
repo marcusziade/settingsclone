@@ -9,8 +9,7 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
-public final class HapticEngine {
+final class HapticEngine {
 
     static let selection = UISelectionFeedbackGenerator()
     static let result = UINotificationFeedbackGenerator()

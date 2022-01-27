@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
 
     func install(_ child: UIViewController, to view: UIView, with constraints: [NSLayoutConstraint]) {
         addChild(child)
