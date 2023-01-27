@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -74,3 +67,5 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
+

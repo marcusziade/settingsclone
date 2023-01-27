@@ -1,10 +1,3 @@
-//
-//  ItemBadgeView.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 class ItemBadgeView: UIView {
@@ -60,4 +53,6 @@ struct ItemImageView_Preview: PreviewProvider {
     static var previews: some View = Preview(for: ItemBadgeView())
         .previewLayout(.fixed(width: 25, height: 25))
 }
+
+
 

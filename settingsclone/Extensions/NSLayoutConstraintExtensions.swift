@@ -1,10 +1,3 @@
-//
-//  NSLayoutConstraintExtensions.swift
-//  
-//
-//  Created by Marcus Ziadé on 7.2.2021.
-//
-
 import UIKit
 
 extension NSLayoutConstraint {
@@ -19,3 +12,5 @@ extension NSLayoutConstraint {
         return self
     }
 }
+
+

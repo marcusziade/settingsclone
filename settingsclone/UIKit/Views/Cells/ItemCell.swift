@@ -1,10 +1,3 @@
-//
-//  ItemCell.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 class ItemCell: UITableViewCell, Reusable {
@@ -61,3 +54,5 @@ struct ItemCell_Preview: PreviewProvider {
         .previewLayout(.fixed(width: 300, height: 100))
         .preferredColorScheme(.dark)
 }
+
+

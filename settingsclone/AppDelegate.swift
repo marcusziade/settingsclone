@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 @main
@@ -28,4 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 }
+
+
 

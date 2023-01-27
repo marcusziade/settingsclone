@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -24,4 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
 }
+
+
 

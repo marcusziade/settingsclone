@@ -1,10 +1,3 @@
-//
-//  Items.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import Foundation
 
 struct Items {
@@ -316,3 +309,5 @@ struct Item: Identifiable, Hashable {
     let title: String
     let section: ListSection
 }
+
+

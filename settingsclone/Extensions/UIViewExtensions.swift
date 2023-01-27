@@ -1,10 +1,3 @@
-//
-//  UIViewExtensions.swift
-//  
-//
-//  Created by Marcus Ziadé on 7.2.2021.
-//
-
 import UIKit
 
 extension UIView {
@@ -22,3 +15,5 @@ extension UIView {
         layer.masksToBounds = false
     }
 }
+
+

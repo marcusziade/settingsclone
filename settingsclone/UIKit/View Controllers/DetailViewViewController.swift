@@ -1,10 +1,3 @@
-//
-//  DetailViewViewController.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 27.2.2021.
-//
-
 import UIKit
 
 class DetailViewViewController: UIViewController {
@@ -47,4 +40,6 @@ struct DetailViewViewController_Preview: PreviewProvider {
     static var previews: some View = Preview(for: DetailViewViewController(title: "General"))
         .preferredColorScheme(.dark)
 }
+
+
 

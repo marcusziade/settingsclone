@@ -1,10 +1,3 @@
-//
-//  SettingsViewController.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 class SettingsViewController: UIViewController {
@@ -132,4 +125,6 @@ struct SettingsViewController_Preview: PreviewProvider {
     )
     .preferredColorScheme(.dark)
 }
+
+
 

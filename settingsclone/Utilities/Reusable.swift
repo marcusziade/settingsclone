@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Marcus Ziadé on 7.2.2021.
-//
-
 import UIKit
 
 protocol Reusable: AnyObject {
@@ -62,3 +55,5 @@ extension UICollectionView {
         return self.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T
     }
 }
+
+

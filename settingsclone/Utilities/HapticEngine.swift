@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Marcus Ziadé on 7.2.2021.
-//
-
 #if os(iOS)
 
 import UIKit
@@ -19,3 +12,5 @@ final class HapticEngine {
 }
 
 #endif
+
+

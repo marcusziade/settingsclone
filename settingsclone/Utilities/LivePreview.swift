@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Marcus Ziadé on 7.2.2021.
-//
-
 import SwiftUI
 
 struct Preview: View {
@@ -63,3 +56,5 @@ private struct PreviewView<ViewType: UIView>: UIViewRepresentable {
     func makeUIView(context: Context) -> ViewType { view }
     func updateUIView(_ uiView: ViewType, context: Context) {}
 }
+
+

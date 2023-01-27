@@ -1,10 +1,3 @@
-//
-//  ItemRowView.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 27.2.2021.
-//
-
 import SwiftUI
 
 struct ItemRowView: View {
@@ -39,3 +32,5 @@ struct ItemRowView_Previews: PreviewProvider {
             .preferredColorScheme(.light)
     }
 }
+
+

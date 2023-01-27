@@ -1,10 +1,3 @@
-//
-//  UIColorExtensions.swift
-//  settingsclone
-//
-//  Created by Marcus Ziadé on 25.2.2021.
-//
-
 import UIKit
 
 extension UIColor {
@@ -19,3 +12,5 @@ extension UIColor {
         }
     }
 }
+
+
